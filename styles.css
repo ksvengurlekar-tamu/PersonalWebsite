@@ -1,11 +1,174 @@
-h1 {
-    background-color: lightblue;
+/* General */
+
+*{
+    background-color: #1e1e21; /* #38383d */
+    font-family: 'Courier New', Courier, monospace;
+    color: #35b827;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+/* headers */
+
+@keyframes slideText {
+    /* animation for the header */
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0px); }
+    
+}
+
+section.header {
+    background-image: url(resources/Empty_LinkedIn_Style_Banner3.png);
+    /* display: block; Make the image a block-level element */
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0%;
+    border-bottom: 5px solid #848484;
+
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+    float: flex;
+    font-size: 2.5em;
+    justify-content: center;
+    padding-top: 7.5%;
+    padding-bottom: 7.5%;
+    margin: 0;
+    background-color: transparent;
+
+}
+
+header.anim {
+    /* I have no idea if this will work but will look cool if it does*/
+    animation-name: slideText;
+    animation-duration: 2s;
+    animation-delay: 0s;
 }
 
 h2 {
     font-size: larger;
+
+    /* off the walls */
+    margin: 10px 5vh; /* R/L margin, U/D margin */
 }
 
-body.nav{
-    background-color: aliceblue;
+
+
+/* footer */
+
+section.footer{
+    position: relative; /* Position relative for absolute positioning */
+    bottom: 0;
+}
+
+section.footer div {
+    width: 100%;
+    padding: 3%;
+    background-color: #1a1919;
+}
+
+section.footer p{
+    /* Copyright tag: more serious formatting */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #dadada;
+    
+    position: absolute;
+}
+
+
+
+/* text bodies */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.text {
+    font-size: 16px;
+    line-height: 1.5; /* space for readability */
+    float: flex;
+    padding-bottom: 10%;
+
+    border-bottom: 5px solid #848484;
+}
+
+img.right_image {
+    float: right; /* Float the image to the right */
+    margin-left: 20px; /* Add some spacing between the image and text */
+    margin-right: 5vh;
+}
+
+img.left_image {
+    float: left; /* Float the image to the left */
+    margin-right: 20px; /* Add some spacing between the image and text */
+    margin-left: 5vh;
+}
+
+section.text p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 20vh; /* R/L margin, U/D margin */
+    background-color: #dadada;
+}
+
+
+
+/* navigation bar */
+
+section.nav {
+    padding-top: 0;
+    margin: 0;
+
+    border-bottom: 5px solid #848484;   
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+}
+
+nav ul li {
+    margin-right: 20px;
+    display: inline-block;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    margin: 0 20px;
+}
+
+/* 
+nav ul li:last-child {
+    margin-right: 0;
+} */
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 15px 25px;
+    padding: 10px;
+    transition: color 0.3s, ease-in-out 0.3s;
+    font-weight: 500;
+
+    border: 2px solid #848484;
+    border-radius: 20%; /* Makes the border oval shaped */
+    text-align: center;
+    background-color: #1e1e21; /* Background color inside the oval */
+}
+
+nav ul li a:hover {
+    /* text-decoration: underline;*/
+
+    color: #007bff; 
+    border: 2px solid #007bff;
 }

@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>Document</title>
+    </head>
 
     <body>
         <section class="header">
-            <header class="anim">> Kiran Vengurlekar</header>
+            <header >> Kiran Vengurlekar</header>
         </section>
+
 
         <section class="nav">
             <nav>
                 <ul>
                     <li><a href = "index.html">Home</a></li>
-                    <li><a href = "technical_page.html">Technical</a></li>
+                    <li><a href = "technical_page.html">Portfolio</a></li>
                     <li><a href = "qualifications_page.html">Qualifications</a></li>
                     <li><a href = "service_page.html">Service</a></li>
                     <li><a href = "ai_page.html">AI</a></li>
@@ -24,14 +25,42 @@
             </nav>
         </section>
         
+        
         <section class = "text">
-            <h2>About me</h2>
-            <img src="your-image.jpg" alt="Image" class="right_image">
+            <h2>Y-86 Processesor</h2>
+            <img src="./resources/Processor_project.png" alt="Image" class="right_image">
             <p>
-
+                For this project, I, and four other team members, created our own 
+                <a href="https://cse.unl.edu/~goddard/Courses/CSCE230J/Lectures/Lecture10.pdf">
+                Y-86 processor</a>
+                circuit. The processor implemented all five stages of instruction pipelining
+                and was fully function when computing basic instructions like insertion sort or
+                matrix multiplication. The circuit showed a fully functional ROM, RAM, and memory
+                system. Each stage of instruction pipelining has its own individual
+                commoponent. I personly implemented the Fetch, Program Counter, and ALU components,
+                along with integrating the processes together to ensure pipeline capabilities. The 
+                digital circuit designing platform we used was <a href="https://github.com/logisim-evolution/logisim-evolution">Logism-Evolution.</a> 
             </p>
             
+            <!-- space in between paragraphs -->
+            <p class="space"></p>
+            <p class="space"></p>
+            <p class="space"></p>
+
+            <h2>TAMU Hackathon ASL translator</h2>
+            <img src="./resources/CSCE-news-TAMUhack-25Feb2020.jpg" alt="Image" class="left_image">
+            <p>
+                <a href="https://tamudatathon.com/"> Texas A&M Hackathon</a> is a recruiting competition where various companies provide
+                open-ended problems to solve. With the help of three colleagues, I chose the prompt
+                which said to implement a solution to help a group with a social disability. The
+                solution we came up with was to make a translator for American Sign Language (ASL).
+                We used Python's speech-to-text package and the online English Lexicon to display
+                corresponding ASL signs based on user audio input. The output would display 90% of 
+                English words translated into ASL, and if the word was not found in the database
+                of words, it would be spelled out using alphabetical signs.
+            </p>
         </section>
+
 
         <section class="footer">
             <nav>
@@ -44,6 +73,7 @@
                 </ul>
             </nav>
             
+
             <div>
                 <!-- Copyright tag-->
                 <p>
@@ -53,4 +83,5 @@
 
         </section>
     </body>
+
 </html>

@@ -1,0 +1,210 @@
+/* General */
+
+* {
+    background-color: #f0f0f0; /* Light gray background */
+    font-family: 'Arial', sans-serif; /* Change to Arial font */
+    color: #333; /* Dark text color */
+}
+
+body {
+    /* Removes default padding */
+    margin: 0;
+    padding: 0;
+}
+
+/* Button */
+
+button {
+    margin: 30px;
+    font-size: 1.75em;
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 20%; /* Makes the border oval shaped */
+    padding: 10px;
+}
+
+button:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Headers */
+
+/* @keyframes slideText {
+    /* Animation for the header 
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0px); }
+} */
+
+section.header {
+    background-image: url(resources/Empty_LinkedIn_Style_Banner3.png);
+    /* display: block; Make the image a block-level element */
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0%;
+    border-bottom: 5px solid #007bff; /* Blue border */
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+    float: flex;
+    font-size: 2.5em;
+    justify-content: center;
+    padding-top: 7.5%;
+    padding-bottom: 7.5%;
+    margin: 0;
+    background-color: transparent;
+}
+
+/* header.anim {
+    /* Animation for header text 
+    /* Left -> right slide in 2 seconds 
+    animation-name: slideText;
+    animation-duration: 2s;
+    animation-delay: 0s;
+} */
+
+h2 {
+    /* Semi header */
+    font-size: larger;
+    /* Off the walls */
+    margin: 10px 20vh; /* R/L margin, U/D margin */
+    padding: 25px;
+}
+
+/* Footer */
+
+section.footer {
+    position: relative; /* Position relative for absolute positioning */
+    bottom: 0;
+}
+
+section.footer div {
+    width: 100%;
+    padding: 3%;
+    padding-bottom: 7%;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+section.footer p {
+    /* Copyright tag: more serious formatting */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333; /* Dark text color */
+    background-color: #f0f0f0; /* Light gray background */
+    position: absolute;
+}
+
+/* Text Bodies */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.text {
+    font-size: 22px;
+    line-height: 1.5; /* Space for readability */
+    float: flex;
+    padding-bottom: 10%;
+    border-bottom: 5px solid #007bff; /* Blue border */
+}
+
+section.text p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #007bff; /* Blue text color */
+    margin: 10px 25vh; /* R/L margin, U/D margin */
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 25px;
+    box-shadow: rgba(0, 0, 0, 0.74) 0px 3px 8px; /* Box shadow for text */
+}
+
+section.text p.space {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+section.text p a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #007bff; /* Blue text color */
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+section.text p a:hover {
+    color: #007bff; /* Blue color on hover */
+}
+
+/* Images (in text bodies) */
+
+img {
+    height: 500px;
+    width: fit-content;
+    padding: 20px; /* Add some spacing between the image and text */
+    padding-top: 0%;
+
+    box-shadow: rgba(0, 0, 0, 0.74) 0px 3px 8px; /* Box shadow for text */
+}
+
+img.right_image {
+    float: right; /* Float the image to the right */
+    margin-right: 20vh;
+}
+
+img.left_image {
+    float: left; /* Float the image to the left */
+    margin-right: 20px;
+    margin-left: 20vh;
+}
+
+/* Resume: Google Drive Embedding */
+
+iframe {
+    width: 100%;
+    height: 1000px;
+    border: none;
+}
+
+/* Navigation Bar */
+
+section.nav {
+    padding-top: 0;
+    margin: 0;
+    border-bottom: 5px solid #007bff; /* Blue border */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+}
+
+nav ul li {
+    margin-right: 20px;
+    display: inline-block;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 15px 25px;
+    padding: 10px;
+    transition: color 0.3s, ease-in-out 0.3s;
+    font-weight: 500;
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 20%; /* Makes the border oval shaped */
+    text-align: center;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+nav ul li a:hover {
+    font-size: 1.75em;
+    color: #007bff; /* Blue color on hover */
+    border: 2px solid #007bff; /* Blue border on hover */
+}

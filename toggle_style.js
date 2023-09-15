@@ -1,3 +1,9 @@
+// To prevent issue on reload of empty local storage item "href"
+if (!localStorage.getItem("href")) {
+    toggleStyleSheet();
+}
+
+
 function toggleStyleSheet(){
     // Get style element by ID 
     el = document.getElementById("mainStyleSheet");

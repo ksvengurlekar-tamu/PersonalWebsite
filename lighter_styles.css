@@ -10,24 +10,31 @@ body {
     /* Removes default padding */
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
+
+
 
 /* Button */
 
 button {
     margin: 30px;
-    font-size: 1.75em;
+    margin-left: 220px;
+    font-size: 1em;
     border: 2px solid #007bff; /* Blue border */
-    border-radius: 20%; /* Makes the border oval shaped */
-    padding: 10px;
+    border-radius: 90%; /* Makes the border oval shaped */
+    padding: 20px;
 }
 
 button:hover {
-    background-color: #007bff; /* Blue background on hover */
+    background-color: #35b827; /* Blue background on hover */
+    border-color: #1e1e21;
     color: #fff; /* White text on hover */
 }
 
-/* Headers */
+
+
+/* headers */
 
 /* @keyframes slideText {
     /* Animation for the header 
@@ -36,8 +43,9 @@ button:hover {
 } */
 
 section.header {
-    background-image: url(resources/Empty_LinkedIn_Style_Banner3.png);
+    background-image: url(resources/light_blue_banner.png);
     /* display: block; Make the image a block-level element */
+    height: 377px;
     background-repeat: no-repeat;
     background-size: contain;
     margin: 0%;
@@ -53,7 +61,10 @@ header {
     padding-top: 7.5%;
     padding-bottom: 7.5%;
     margin: 0;
+    margin-left: 200px;
     background-color: transparent;
+    color: #f0f0f0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* header.anim {
@@ -65,14 +76,16 @@ header {
 } */
 
 h2 {
-    /* Semi header */
+    /* semi header */
+    margin-left: 220px;
     font-size: larger;
-    /* Off the walls */
+    /* off the walls */
     margin: 10px 20vh; /* R/L margin, U/D margin */
     padding: 25px;
+    font-weight: bold;
 }
 
-/* Footer */
+/* footer */
 
 section.footer {
     position: relative; /* Position relative for absolute positioning */
@@ -83,18 +96,19 @@ section.footer div {
     width: 100%;
     padding: 3%;
     padding-bottom: 7%;
-    background-color: #f0f0f0; /* Light gray background */
+    background-color: #131d44;
 }
 
 section.footer p {
     /* Copyright tag: more serious formatting */
     font-family: Arial, Helvetica, sans-serif;
-    color: #333; /* Dark text color */
-    background-color: #f0f0f0; /* Light gray background */
+    color: #f0f0f0;
+    background-color: #131d44;
     position: absolute;
+    margin-left: 220px;
 }
 
-/* Text Bodies */
+/* text Bodies */
 
 .container {
     max-width: 1200px;
@@ -106,6 +120,7 @@ section.footer p {
 }
 
 section.text {
+    margin-left: 220px;
     font-size: 22px;
     line-height: 1.5; /* Space for readability */
     float: flex;
@@ -115,9 +130,9 @@ section.text {
 
 section.text p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #007bff; /* Blue text color */
+    color: #007bff; 
     margin: 10px 25vh; /* R/L margin, U/D margin */
-    background-color: #f0f0f0; /* Light gray background */
+    background-color: #f0f0f0; 
     padding: 25px;
     box-shadow: rgba(0, 0, 0, 0.74) 0px 3px 8px; /* Box shadow for text */
 }
@@ -125,86 +140,120 @@ section.text p {
 section.text p.space {
     background-color: transparent;
     box-shadow: none;
+    padding: 5px;   
 }
 
 section.text p a {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #007bff; /* Blue text color */
-    background-color: #f0f0f0; /* Light gray background */
+    background-color: transparent; 
 }
 
 section.text p a:hover {
-    color: #007bff; /* Blue color on hover */
+    color: #333; 
 }
 
-/* Images (in text bodies) */
+
+
+/* images (in text bodies) */
 
 img {
     height: 500px;
     width: fit-content;
     padding: 20px; /* Add some spacing between the image and text */
     padding-top: 0%;
+    margin-top: 20px;
 
     box-shadow: rgba(0, 0, 0, 0.74) 0px 3px 8px; /* Box shadow for text */
 }
 
 img.right_image {
-    float: right; /* Float the image to the right */
-    margin-right: 20vh;
+    float: left; /* Float the image to the right: flipped */
+    margin-left: 20vh;
+    margin-right: 20px;
 }
 
 img.left_image {
-    float: left; /* Float the image to the left */
-    margin-right: 20px;
-    margin-left: 20vh;
+    float: right; /* Float the image to the left: flipped */
+    margin-left: 20px;
+    margin-right: 20vh;
 }
 
-/* Resume: Google Drive Embedding */
-
+/* resume: Google Drive Embedding */
 iframe {
     width: 100%;
     height: 1000px;
     border: none;
+    background-color: #f0f0f0; /* Light gray background */
 }
 
-/* Navigation Bar */
+
+
+/* navigation Bar */
 
 section.nav {
     padding-top: 0;
     margin: 0;
-    border-bottom: 5px solid #007bff; /* Blue border */
+    border-right: 5px solid #007bff;
+
+    /* Positioning the navigation bar on the left */
+    position: fixed;
+    top: 0;
+    left: 0; /* Left aligned*/ 
+    height: 100%;
+    width: 175px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+
+    z-index: 32984935;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center; /* Vertically center */
+    padding: 0;
 }
 
 nav ul li {
-    margin-right: 20px;
-    display: inline-block;
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
-    margin: 0 20px;
+    margin-bottom: 10px;
 }
 
 nav ul li a {
     text-decoration: none;
     font-size: 1.5em;
-    margin: 15px 25px;
     padding: 10px;
+    display: block;
     transition: color 0.3s, ease-in-out 0.3s;
     font-weight: 500;
-    border: 2px solid #007bff; /* Blue border */
-    border-radius: 20%; /* Makes the border oval shaped */
-    text-align: center;
-    background-color: #f0f0f0; /* Light gray background */
+    color: #007bff;
 }
 
 nav ul li a:hover {
-    font-size: 1.75em;
-    color: #007bff; /* Blue color on hover */
-    border: 2px solid #007bff; /* Blue border on hover */
+    font-size: 1.65em;
+    color: #333; 
+    background-color: #007bff; /* Blue background on hover */
+    text-decoration: none;
+}
+
+section.footer nav {
+    padding-top: 0;
+    margin: 0;
+    border-top: #007bff;
+    width: 150%;
+}
+
+section.footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: left; /* Horizontally centered */
+    align-items: center; /* Vertically centered */
+    padding-left: 25%;
+}
+
+section.footer nav ul li {
+    display: inline-block;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    margin: 0 20px;
 }
